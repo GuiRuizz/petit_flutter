@@ -45,9 +45,10 @@ class _WebPageState extends State<WebPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Flutter Simple Example')),
-      body: WebViewWidget(controller: _controller),
+    return SafeArea(
+      child: Scaffold(
+        body: WebViewWidget(controller: _controller),
+      ),
     );
   }
 }
