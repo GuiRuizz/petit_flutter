@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:petit_flutter/pages/web_page.dart';
-
+import 'package:petit_flutter/pages/splash_screen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
       ),
-      home: const WebPage(),
+      home: const SplashPage(),
     );
   }
 }
